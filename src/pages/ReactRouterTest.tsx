@@ -1,3 +1,3 @@
 export default function ReactRouterTest() {
-  return <main></main>
+  return <main></main>;
 }
