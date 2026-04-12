@@ -1,15 +1,15 @@
-import { useState } from 'react'
-import { Link, Route, Routes } from 'react-router'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import ReactRouterTest from './pages/ReactRouterTest'
-import './App.css'
+import { useState } from "react";
+import { Link, Route, Routes } from "react-router";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "./assets/vite.svg";
+import heroImg from "./assets/hero.png";
+import ReactRouterTest from "./pages/ReactRouterTest";
+import "./App.css";
 
 function App() {
   return (
     <>
-      <nav style={{ padding: '1rem', display: 'flex', gap: '1rem' }}>
+      <nav style={{ padding: "1rem", display: "flex", gap: "1rem" }}>
         <Link to="/">Home</Link>
         <Link to="/ReactRouterTest">ReactRouterTest</Link>
       </nav>
@@ -19,11 +19,11 @@ function App() {
         <Route path="/ReactRouterTest2" element={<ReactRouterTest />} />
       </Routes>
     </>
-  )
+  );
 }
 
 function Home() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -133,7 +133,7 @@ function Home() {
       <div className="ticks"></div>
       <section id="spacer"></section>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
