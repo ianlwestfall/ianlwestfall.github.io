@@ -6,27 +6,21 @@
 
 **Live site:** [ianlwestfall.github.io](https://ianlwestfall.github.io)
 
-My professional portfolio site, built to showcase software development projects, education, career experience, technical skills and certifications, learning recommendations, hobbies, and more.
-
-## Table of Contents
-
-- [Overview](#overview)
-- [Tech Stack](#tech-stack)
-- [Development Setup](#development-setup)
-- [Scripts Reference](#scripts-reference)
-
 ## Overview
 
-This site is built from scratch as a modern, maintainable portfolio using React, TypeScript, and Vite. It serves as a central place to present my work, background, and contact information in a polished, professional format.
+A portfolio website built with React, TypeScript, and Vite as a modern maintainable portfolio project. It serves as a central place to present my work, background, and contact information in a polished, professional format. The project includes linting, formatting, unit testing, end-to-end testing, pre-commit checks, CI, and automated deployment.
 
-This portfolio is intended to highlight:
+## Features
 
-- Software development projects
-- IT and technical experience
-- Education and certifications
-- Technical skills and tools
-- Contact and professional links
-- Interesting hobbies
+- Responsive multi-page portfolio website
+- Showcases projects, skills, education, and professional background
+- Built with React, TypeScript, Vite, and Tailwind CSS
+- Client-side routing with React Router
+- Unit testing with Vitest
+- End-to-end testing with Playwright
+- Linting and formatting with ESLint and Prettier
+- Pre-commit checks with Husky and lint-staged
+- CI/CD and deployment with GitHub Actions and GitHub Pages
 
 ## Tech Stack
 
@@ -48,44 +42,40 @@ This portfolio is intended to highlight:
 | [Prettier](https://prettier.io)                                                                       | Code formatting    |
 | [Vitest](https://vitest.dev)                                                                          | Unit testing       |
 | [Playwright](https://playwright.dev)                                                                  | End-to-end testing |
-| [Husky](https://typicode.github.io/husky) + [lint-staged](https://github.com/lint-staged/lint-staged) | Pre-commit hooks   |
+| [Husky](https://typicode.github.io/husky) + [lint-staged](https://github.com/lint-staged/lint-staged) | Pre-commit checks  |
 | [GitHub Actions](https://github.com/features/actions)                                                 | CI/CD pipeline     |
 | [GitHub Pages](https://pages.github.com)                                                              | Hosting            |
 
-## Development Setup
+## Getting Started
 
-Clone the repo and install dependencies:
+Clone the repository, install dependencies, and start the development server:
 
 ```bash
+git clone https://github.com/ianlwestfall/ianlwestfall.github.io.git
+cd ianlwestfall.github.io
 npm install
-```
-
-Start the development server:
-
-```bash
 npm run dev
 ```
 
-## Scripts Reference
+## Available Scripts
 
 | Command                | Description                             |
 | ---------------------- | --------------------------------------- |
 | `npm run dev`          | Start the development server            |
 | `npm run build`        | Build for production                    |
 | `npm run preview`      | Preview the production build locally    |
+| `npm run typecheck`    | Run TypeScript type checking            |
 | `npm run lint`         | Run ESLint                              |
+| `npm run lint:fix`     | Run ESLint with auto-fix                |
 | `npm run format`       | Format the codebase with Prettier       |
 | `npm run format:check` | Check formatting without changing files |
 | `npm run test`         | Run unit tests in watch mode            |
 | `npm run test:run`     | Run unit tests once                     |
-| `npx playwright test`  | Run end-to-end tests                    |
+| `npm run test:e2e`     | Run end-to-end tests                    |
+| `npm run check`        | Run main local quality checks           |
 
 ## Deployment
 
 This site is deployed with **GitHub Pages** using **GitHub Actions**.
 
 Deployment runs automatically when changes are merged into `main`.
-
-## Author
-
-**Ian Westfall**
