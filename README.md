@@ -1,10 +1,19 @@
-# ianlwestfall.github.io Portfolio
+# ianlwestfall.github.io - Portfolio
 
 [![CI](https://github.com/ianlwestfall/ianlwestfall.github.io/actions/workflows/ci.yml/badge.svg)](https://github.com/ianlwestfall/ianlwestfall.github.io/actions/workflows/ci.yml)
 [![Deploy](https://github.com/ianlwestfall/ianlwestfall.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/ianlwestfall/ianlwestfall.github.io/actions/workflows/deploy.yml)
 [![Playwright](https://github.com/ianlwestfall/ianlwestfall.github.io/actions/workflows/playwright.yml/badge.svg)](https://github.com/ianlwestfall/ianlwestfall.github.io/actions/workflows/playwright.yml)
 
-My professional portfolio site, built to showcase software development projects, education, career experience, technical skills and certifications, hobbies, etc.
+**Live site:** [ianlwestfall.github.io](https://ianlwestfall.github.io)
+
+My professional portfolio site, built to showcase software development projects, education, career experience, technical skills and certifications, learning recommendations, hobbies, and more.
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Tech Stack](#tech-stack)
+- [Development Setup](#development-setup)
+- [Scripts Reference](#scripts-reference)
 
 ## Overview
 
@@ -21,88 +30,55 @@ This portfolio is intended to highlight:
 
 ## Tech Stack
 
-This project is built with:
+**Core:**
 
-- React
-- TypeScript
-- Vite
-- Tailwind CSS
-- React Router
+|                                              |                           |
+| -------------------------------------------- | ------------------------- |
+| [React](https://react.dev)                   | UI framework              |
+| [TypeScript](https://www.typescriptlang.org) | Type-safe JavaScript      |
+| [Vite](https://vite.dev)                     | Build tool and dev server |
+| [Tailwind CSS](https://tailwindcss.com)      | Utility-first styling     |
+| [React Router](https://reactrouter.com)      | Client-side routing       |
 
-Quality and workflow tooling includes:
+**Tooling:**
 
-- ESLint
-- Prettier
-- Vitest
-- Playwright
-- Husky
-- lint-staged
-- GitHub Actions
-- GitHub Pages
+|                                                                                                       |                    |
+| ----------------------------------------------------------------------------------------------------- | ------------------ |
+| [ESLint](https://eslint.org)                                                                          | Linting            |
+| [Prettier](https://prettier.io)                                                                       | Code formatting    |
+| [Vitest](https://vitest.dev)                                                                          | Unit testing       |
+| [Playwright](https://playwright.dev)                                                                  | End-to-end testing |
+| [Husky](https://typicode.github.io/husky) + [lint-staged](https://github.com/lint-staged/lint-staged) | Pre-commit hooks   |
+| [GitHub Actions](https://github.com/features/actions)                                                 | CI/CD pipeline     |
+| [GitHub Pages](https://pages.github.com)                                                              | Hosting            |
 
 ## Development Setup
 
-### Install dependencies
+Clone the repo and install dependencies:
 
 ```bash
 npm install
 ```
 
-### Start development server
+Start the development server:
 
 ```bash
 npm run dev
 ```
 
-### Build for production
+## Scripts Reference
 
-```bash
-npm run build
-```
-
-### Preview the production build locally
-
-```bash
-npm run preview
-```
-
-## Quality Checks
-
-### Run linting
-
-```bash
-npm run lint
-```
-
-### Run unit tests
-
-```bash
-npm run test
-```
-
-### Run unit tests once
-
-```bash
-npm run test:run
-```
-
-### Run end-to-end tests
-
-```bash
-npx playwright test
-```
-
-### Format the codebase
-
-```bash
-npm run format
-```
-
-### Check formatting without changing files
-
-```bash
-npm run format:check
-```
+| Command                | Description                             |
+| ---------------------- | --------------------------------------- |
+| `npm run dev`          | Start the development server            |
+| `npm run build`        | Build for production                    |
+| `npm run preview`      | Preview the production build locally    |
+| `npm run lint`         | Run ESLint                              |
+| `npm run format`       | Format the codebase with Prettier       |
+| `npm run format:check` | Check formatting without changing files |
+| `npm run test`         | Run unit tests in watch mode            |
+| `npm run test:run`     | Run unit tests once                     |
+| `npx playwright test`  | Run end-to-end tests                    |
 
 ## Deployment
 
