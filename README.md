@@ -1,73 +1,115 @@
-# React + TypeScript + Vite
+# ianlwestfall.github.io Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![CI](https://github.com/ianlwestfall/ianlwestfall.github.io/actions/workflows/ci.yml/badge.svg)](https://github.com/ianlwestfall/ianlwestfall.github.io/actions/workflows/ci.yml)
+[![Deploy](https://github.com/ianlwestfall/ianlwestfall.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/ianlwestfall/ianlwestfall.github.io/actions/workflows/deploy.yml)
+[![Playwright](https://github.com/ianlwestfall/ianlwestfall.github.io/actions/workflows/playwright.yml/badge.svg)](https://github.com/ianlwestfall/ianlwestfall.github.io/actions/workflows/playwright.yml)
 
-Currently, two official plugins are available:
+My professional portfolio site, built to showcase software development projects, education, career experience, technical skills and certifications, hobbies, etc.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Overview
 
-## React Compiler
+This site is built from scratch as a modern, maintainable portfolio using React, TypeScript, and Vite. It serves as a central place to present my work, background, and contact information in a polished, professional format.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This portfolio is intended to highlight:
 
-## Expanding the ESLint configuration
+- Software development projects
+- IT and technical experience
+- Education and certifications
+- Technical skills and tools
+- Contact and professional links
+- Interesting hobbies
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
+This project is built with:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- React Router
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
+Quality and workflow tooling includes:
+
+- ESLint
+- Prettier
+- Vitest
+- Playwright
+- Husky
+- lint-staged
+- GitHub Actions
+- GitHub Pages
+
+## Development Setup
+
+### Install dependencies
+
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Start development server
 
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
-
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs["recommended-typescript"],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
+```bash
+npm run dev
 ```
+
+### Build for production
+
+```bash
+npm run build
+```
+
+### Preview the production build locally
+
+```bash
+npm run preview
+```
+
+## Quality Checks
+
+### Run linting
+
+```bash
+npm run lint
+```
+
+### Run unit tests
+
+```bash
+npm run test
+```
+
+### Run unit tests once
+
+```bash
+npm run test:run
+```
+
+### Run end-to-end tests
+
+```bash
+npx playwright test
+```
+
+### Format the codebase
+
+```bash
+npm run format
+```
+
+### Check formatting without changing files
+
+```bash
+npm run format:check
+```
+
+## Deployment
+
+This site is deployed with **GitHub Pages** using **GitHub Actions**.
+
+Deployment runs automatically when changes are merged into `main`.
+
+## Author
+
+**Ian Westfall**
