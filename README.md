@@ -1,5 +1,9 @@
 # ianlwestfall.github.io Portfolio
 
+[![CI](https://github.com/ianlwestfall/ianlwestfall.github.io/actions/workflows/ci.yml/badge.svg)](https://github.com/ianlwestfall/ianlwestfall.github.io/actions/workflows/ci.yml)
+[![Deploy](https://github.com/ianlwestfall/ianlwestfall.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/ianlwestfall/ianlwestfall.github.io/actions/workflows/deploy.yml)
+[![Playwright](https://github.com/ianlwestfall/ianlwestfall.github.io/actions/workflows/playwright.yml/badge.svg)](https://github.com/ianlwestfall/ianlwestfall.github.io/actions/workflows/playwright.yml)
+
 My professional portfolio site, built to showcase software development projects, education, career experience, technical skills and certifications, hobbies, etc.
 
 ## Overview
