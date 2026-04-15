@@ -1,4 +1,4 @@
 {
-  "*.{css,md,json,yml,yaml}": ["prettier --write"],
-  "*.{js,jsx,ts,tsx}": ["prettier --write", "eslint --fix"]
+  "*.{css,md,json,yml,yaml,html}": ["npm run format:staged --"],
+  "*.{js,jsx,ts,tsx}": ["npm run format:staged --", "eslint --fix"]
 }
