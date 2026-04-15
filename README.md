@@ -64,7 +64,6 @@ npm run dev
 | `npm run dev`          | Start the development server            |
 | `npm run build`        | Build for production                    |
 | `npm run preview`      | Preview the production build locally    |
-| `npm run typecheck`    | Run TypeScript type checking            |
 | `npm run lint`         | Run ESLint                              |
 | `npm run lint:fix`     | Run ESLint with auto-fix                |
 | `npm run format`       | Format the codebase with Prettier       |
@@ -72,7 +71,6 @@ npm run dev
 | `npm run test`         | Run unit tests in watch mode            |
 | `npm run test:run`     | Run unit tests once                     |
 | `npm run test:e2e`     | Run end-to-end tests                    |
-| `npm run check`        | Run main local quality checks           |
 
 ## Deployment
 
